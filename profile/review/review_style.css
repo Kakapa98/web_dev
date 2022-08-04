@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #000;
+}
+.con{
+    width: 400px;
+    background: #111;
+    padding: 20px 30px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.con, .stars input{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    transition: all 0.2s ease;
+}
+form header{
+    width: 100%;
+    font-size: 25px;
+    color: yellowgreen;
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid #333;
+    padding: 10px;
+    font-size: 17px;
+}
+form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+}
+form .btn button{
+    height: 100%;
+    width: 100%;
+    font-size: 17px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #111;
+    outline: none;
+}
+#rate-1:checked ~ form header::before{
+    content: "Very Bad!💔";
+}
+#rate-2:checked ~ form header::before{
+    content: "Just Bad!💘";
+}
+#rate-3:checked ~ form header::before{
+    content: "Normal!🤎";
+}
+#rate-4:checked ~ form header::before{
+    content: "Just Good!💓";
+}
+#rate-5:checked ~ form header::before{
+    content: "Very Good!💖";
+}

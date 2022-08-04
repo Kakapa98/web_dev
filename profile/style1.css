@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:'Times New Roman', Times, serif;
+    background-color: black;
+    
+}
+header{
+    background: black;
+    padding: 20px;
+    color: whitesmoke;
+}
+.header, .h{   
+    text-align: center;
+    font-size: 35px;
+    color: whitesmoke;
+}
+.header, .p{
+    font-size: 14px;
+    text-align: center;
+    color: whitesmoke;
+}
+nav{
+    background: black;
+    float: left;
+    width: 10%;
+    height: 600px;
+    padding: 5px;
+
+}
+nav ul{
+    list-style-type: none;
+}
+article{
+    /* background-image: linear-gradient(rgba(39, 207, 199, 0.8),rgba(0, 238, 247, 0.8)),url(flower.gif);
+    background-position: center;
+    background-size: cover; */
+    background: black;
+    float: left;
+    padding: 20px;
+    width:  50%;
+    height: 600px;
+    color: whitesmoke;
+    border: 1px;
+    border-right-style: double;
+    border-color: white;
+}
+.article, .python{
+    float: left;
+    width: 50%;
+    border-top-style: double;
+    border-color: white;
+}
+.article, .java{
+    float: left;
+    width: 50%;
+    border-top-style: double;
+    border-color: white;
+    border-left-style: double;
+}
+/* aside{
+    background: #ccc;
+    float: left;
+    padding: 20px;
+    width:  40%;
+    height: 600px;
+} */
+section::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    animation-name: change-color;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    padding: 10px;
+    text-align: center;
+    color: brown;
+}
+.contact{
+    font-size: 18px;
+    text-align: center;
+    color: whitesmoke;
+}
+/* .contact, .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+} */
+  
+.contact, .fa:hover {
+    opacity: 0.7;
+}
+.contact, .fa-facebook {
+    
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.contact, .fa-instagram {
+    
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.contact, .fa-linkedin {
+    
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+@media (max-width: 600px){
+    .nav, .article, .aside{
+        width: 100%;
+        height: auto;
+    }
+}
+@keyframes change-color {
+    0%{background-color: aqua}
+    10% {background-color: red}
+    25% {background-color: orange}
+    50% {background-color: yellow}
+    75% {background-color: green}
+    90% {background-color: blue}
+    100% {background-color: purple}
+}
+aside{
+    background: black;
+    float: left;
+    padding: 20px;
+    width:  40%;
+    height: 600px;
+    border-style: solid;
+    border-color: white;
+    color: whitesmoke
+}

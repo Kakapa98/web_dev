@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+        <title> My profile </title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="card">
+            <div class="inner-box" id="card">
+                <div class="card-front">
+
+                   <h2>LOGIN</h2>
+                   <form>
+                        <input type="email" class="input-box"
+                        placeholder="E-mail" required>
+                        <input type="password" class="input-box"
+                        placeholder="Password" required>
+                        <button type="LogIn" class="submit-btn" onclick="document.location = 'profile/index.html'">SignIn</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                   </form>
+                   <button type="button" class="btn" onclick="opensignup()">I'm new here</button>
+                   <a href="">Forgot Password</a>
+                </div>
+                <div class="card-back">
+                    <h2>SignUp</h2>
+                    <form>
+                        <input type="text" class="input-box"
+                        placeholder="Your Name" required>
+                        <input type="email" class="input-box"
+                        placeholder="E-mail" required>
+                        <input type="password" class="input-box"
+                        placeholder="Password" required>
+                        <button type="LogIn" class="submit-btn">SignUp</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="opensignin()">Already registered</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var card = document.getElementById("card");
+
+        function opensignup(){
+            card.style.transform = "rotateY(-180deg)";
+        }
+
+        function opensignin(){
+            card.style.transform = "rotateY(0deg)";
+        }
+
+    </script>
+</body>
+
+</html>
